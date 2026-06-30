@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboards | Rushi Chavan</title>
+    <meta name="description" content="Institutional analytics hub and Dune dashboards covering on-chain liquidity, stablecoins, and market structure.">
+
+    <!-- Google Fonts: JetBrains Mono + Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Rushi Chavan</a>
+            </div>
+            <button class="mobile-menu-btn">☰</button>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="research.html">Research</a>
+                <a href="dashboards.html" class="active">Dashboards</a>
+                <a href="articles.html">Articles</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section Title Bar -->
+    <div class="section-title-bar">> ANALYTICS_HUB // LIVE_DATA<span class="blink">_</span></div>
+
+    <!-- Header + Filter Bar -->
+    <section class="section" style="padding-bottom: 0;">
+        <div class="container">
+            <p class="card-desc" style="margin-bottom: 2rem;">
+                Live, institutional-grade on-chain dashboards tracking key metrics across digital asset sectors, built primarily on Dune Analytics.
+            </p>
+
+            <div class="filter-bar">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="rwa">RWA</button>
+                <button class="filter-btn" data-filter="defi">DeFi</button>
+                <button class="filter-btn" data-filter="market-structure">Market Structure</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboards List -->
+    <section class="section">
+        <div class="container">
+            <div class="grid" style="grid-template-columns: 1fr; gap: 2rem;">
+
+                <div class="card filter-item" data-category="rwa">
+                    <div class="card-header">RWA</div>
+                    <div class="card-body">
+                        <h3 class="dash-title">RWA Tokenization Pipeline Tracker</h3>
+                        <p class="card-desc"><strong>Research Question:</strong> What is the real-time velocity, redemption rate, and backing distribution of tokenized Treasuries and private credit?</p>
+                        <p class="card-desc"><strong>Key Findings:</strong> Tokenized credit markets are scaling rapidly, with yields increasingly competing with traditional off-chain money market funds.</p>
+                        <a href="https://dune.com/rushixyz/rwa-tokenization-pipeline-tracker" target="_blank" class="card-link">VIEW FULL DASHBOARD ON DUNE →</a>
+                    </div>
+                </div>
+
+                <div class="card filter-item" data-category="defi">
+                    <div class="card-header">DEFI</div>
+                    <div class="card-body">
+                        <h3 class="dash-title">Protocol Revenue Quality Scorecard</h3>
+                        <p class="card-desc"><strong>Research Question:</strong> How does protocol fee generation translate into high-quality, sustainable revenue versus inflationary token emission?</p>
+                        <p class="card-desc"><strong>Key Findings:</strong> Top DeFi protocols exhibit diverging revenue quality profiles, with a clear consolidation of real cash flows toward protocol layers with strong execution moats.</p>
+                        <a href="https://dune.com/rushixyz/protocol-revenue-quality-scorecard-defi-fundamental-analysis" target="_blank" class="card-link">VIEW FULL DASHBOARD ON DUNE →</a>
+                    </div>
+                </div>
+
+                <div class="card filter-item" data-category="market-structure">
+                    <div class="card-header">MARKET_STRUCTURE</div>
+                    <div class="card-body">
+                        <h3 class="dash-title">Token Unlock Overhang Risk Monitor</h3>
+                        <p class="card-desc"><strong>Research Question:</strong> What is the structural supply overhang risk from venture capital locks and upcoming token unlock schedules?</p>
+                        <p class="card-desc"><strong>Key Findings:</strong> Concentrated unlock events introduce predictable sell-side pressure that strongly correlates with post-unlock price depreciation and volatility spikes.</p>
+                        <a href="https://dune.com/rushixyz/token-unlock-overhang-risk-monitor-795e" target="_blank" class="card-link">VIEW FULL DASHBOARD ON DUNE →</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p class="footer-text">&copy; 2026 Rushi Chavan. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://x.com/RushiChavan_" target="_blank" rel="noopener noreferrer">X</a>
+                <a href="https://substack.com/@rushichavan" target="_blank" rel="noopener noreferrer">Substack</a>
+                <a href="https://dune.com/rushixyz" target="_blank" rel="noopener noreferrer">Dune</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
